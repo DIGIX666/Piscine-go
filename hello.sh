@@ -1,2 +1,1 @@
-
-echo Hello Thox66 !
+echo Hello Thox66!
