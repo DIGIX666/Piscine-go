@@ -1,1 +1,1 @@
-find . -name 'z*a' -type d -print
+find -name 'z*a!' -print && find -name 'a*' -print && find -name '*z'
