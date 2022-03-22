@@ -1,1 +1,1 @@
-find -name 'z*a!' -print && find -name 'a*' -print && find -name '*z' -print
+find . -name 'a*' -o  -name '*z' ; find . -name 'z*a!'
