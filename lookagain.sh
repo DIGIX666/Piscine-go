@@ -1,3 +1,2 @@
-find -type f find -name '*.sh' | sed 's/.sh//g' | sort -r | tr -d './'
-
-#-printf "%f\n"
+find -type f find -name '*.sh' -printf "%f\n" | sed 's/.sh//g' | sort -r 
+ 
