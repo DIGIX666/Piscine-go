@@ -1,1 +1,1 @@
-find -name '*.sh' | sed 's/.sh//g' | cut -c3-22
+find -name '*.sh' | sed 's/.sh//g' 
