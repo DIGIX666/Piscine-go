@@ -1,1 +1,1 @@
-find -name '*.sh' | sed 's/.sh//g' | cut -c3-7 | sort -r
+find -name '*.sh' | sed 's/.sh .///g' | sort -r | -type f,d
