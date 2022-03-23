@@ -1,1 +1,1 @@
-head -n 20 people | grep "CLUE" crimescene | grep "Annabel" people | head -n 173 streets/Mattapan_Street | tail -n 1 | grep -A 5 "L337" mystery/vehicles | cat Fitness_Galaxy AAA United_MileagePlus
+head -n 20 people | grep "CLUE" crimescene | grep "Annabel" people | head -n 173 streets/Mattapan_Street | tail -n 1 
