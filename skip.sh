@@ -1,1 +1,1 @@
-ls -l | awk '{ print $0 ; print ""; }'
+ls -l | sed -n 'n;p'
