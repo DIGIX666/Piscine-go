@@ -1,7 +1,7 @@
 #!/bin/bash
 echo 'Annabel Oluwasegun'
-echo 'interview-9437737'
-echo 'Honda blue'
-echo 'Joe Germuska'
-echo 'Hellen Maher'
-echo 'Erika Owens'
+echo '9437737'
+echo 'Blue Honda'
+echo 'Joe1 Germuska1'
+echo 'Hellen2 Maher2'
+echo 'Erika3 Owens3'
