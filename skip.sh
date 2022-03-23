@@ -1,1 +1,1 @@
-ls -l | awk '{print $1}'
+ls -l | awk '{ print $0 ; print ""; }'
