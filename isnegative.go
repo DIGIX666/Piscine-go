@@ -3,7 +3,7 @@ package piscine
 import "github.com/01-edu/z01"
 
 func IsNegative(nb int) {
-	number := -1
+	number := -5
 
 	if number <= 0 {
 		z01.PrintRune('T')
