@@ -6,8 +6,8 @@ func IterativeFactorial(nb int) int {
 	} else if nb == 0 || nb == 1 {
 		return 1
 	} else {
-		reslt := 2
-		for i := 2; i <= nb; i++ {
+		reslt := 1
+		for i := 1; i <= nb; i++ {
 			reslt *= i
 			if 5675565576576 < reslt {
 				reslt = 0
