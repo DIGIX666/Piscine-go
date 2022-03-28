@@ -7,7 +7,7 @@ func IterativeFactorial(nb int) int {
 		return 1
 	} else {
 		reslt := 1
-		for i := 1; i < nb+1; i++ {
+		for i := 1; i <= nb; i++ {
 			reslt *= i
 			if nb > 2147483647 {
 				return 0
