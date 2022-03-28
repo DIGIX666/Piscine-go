@@ -6,12 +6,12 @@ func IterativeFactorial(nb int) int {
 	} else if 0 == nb || 1 == nb {
 		return 1
 	} else {
-		res := 2
+		reslt := 2
 		for i := 2; i <= nb; i++ {
-			res *= i
+			reslt *= i
+			return reslt
 		}
 	}
-	return res
 }
 
 // else if 0 == nb || 1 == nb {
