@@ -1,7 +1,7 @@
 package piscine
 
 func Fibonacci(index int) int {
-	if index <= 2 {
+	if index >= 2 {
 		return index
 	} else if index < 0 {
 		return -1
