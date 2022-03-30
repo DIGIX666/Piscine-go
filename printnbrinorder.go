@@ -11,10 +11,10 @@ func PrintNbrInOrder(n int) {
 		} // append range dans le tableau ligne par ligne c'est chiffre | après la boucle recommance pour les autres chiffres
 
 		for range number {
-			lenght++
+			lenght++ // prendre en compte le nombre d'éléments dans le tableau
 		}
 
-		for a := 0; a < lenght; a++ {
+		for a := 0; a < lenght; a++ { // si a inférieur à lenght alors ingrémente a
 			for b := 0; b < lenght; b++ {
 				if number[a] < number[b] {
 					number[b], number[a] = number[a], number[b]
