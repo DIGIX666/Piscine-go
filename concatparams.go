@@ -11,7 +11,7 @@ func ConcatParams(args []string) string {
 
 	for i, v := range args { // v va faire une copie de tout ce que i à récupéré
 		resultat += v    // va récupérer le mot
-		if i != mots-2 { //
+		if i != mots-1 { // pour supprimer le retour à la ligne du dernier mots
 			resultat += "\n" // le résultat égale le mot plus un retour à la ligne tout de suite après
 		}
 	}
