@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func ConcatParams(args []string) string {
 	var resultat string // création de variale en string pour renvoyer le résultat en string
@@ -18,9 +16,4 @@ func ConcatParams(args []string) string {
 		}
 	}
 	return resultat // affiche le mot
-}
-
-func main() {
-	test := []string{"Hello", "how", "are", "you?", "go"}
-	fmt.Println(ConcatParams(test))
 }
