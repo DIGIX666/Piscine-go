@@ -1,6 +1,4 @@
-package main
-
-import "fmt"
+package piscine
 
 func SplitWhiteSpaces(s string) []string {
 	var printstr []string // on créer un tableau printstr qui contient des strings
@@ -14,8 +12,4 @@ func SplitWhiteSpaces(s string) []string {
 		}
 	}
 	return printstr
-}
-
-func main() {
-	fmt.Printf("%#v\n", SplitWhiteSpaces("Hello how are you?"))
 }
