@@ -5,7 +5,7 @@ func MakeRange(min, max int) []int {
 		return nil
 	}
 
-	table := make([]int, max-min) // make permet de créer une nouvelle tranche avec des int
+	table := make([]int, max-min) // make permet de créer une nouvelle tranche avec des int | max-min permet d'exlcure le max
 
 	for i := 0; i < max-min; i++ {
 		table[i] = i + min
