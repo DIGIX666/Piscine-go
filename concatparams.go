@@ -9,5 +9,5 @@ func ConcatParams(args []string) string {
 	for _, v := range args {
 		resultat += "\n" + v
 	}
-	return resultat[1:]
+	return resultat[0:] // on retourne le résulat du début et le : permet de donner un résultat en string
 }
