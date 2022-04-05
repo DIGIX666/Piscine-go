@@ -5,3 +5,9 @@ func ForEach(f func(int), a []int) {
 		f(a[i])
 	}
 }
+
+/* func ForEach(f func(int), a []int) {
+	for _, v := range a {
+		f(v)
+	}
+} */
