@@ -1,30 +1,42 @@
-package piscine
+package main
 
 import "github.com/01-edu/z01"
 
-type door struct {
-	state bool
-}
-
 func PrintStr(s string) {
-	for _, r := range s {
-		z01.PrintRune(r)
+	for _, v := range s {
+		z01.PrintRune(v)
 	}
 }
 
+type Door struct {
+	state bool
+}
+
+// OPEN = true
+// CLOSE = false
+
 func CloseDoor(ptrDoor *Door) bool {
-	PrintStr("Door Clossing ...")
-	state = CLOSE
+	PrintStr("Door Closing...")
+	ptrDoor.state = true
 	return true
 }
 
-func IsDoorOpen(Door Door) {
+func IsDoorOpen(ptrDoor *Door) bool {
 	PrintStr("is the Door opened ?")
-	return Door.state = OPEN
+	ptrDoor.state = false
+	return false
 }
 
-func IsDoorClose(ptrDoor *Door) {
+func IsDoorClose(ptrDoor *Door) bool {
 	PrintStr("is the Door closed ?")
+	ptrDoor.state = false
+	return false
+}
+
+func OpenDoor(ptrDoor *Door) bool {
+	PrintStr("Door Opening...")
+	ptrDoor.state = true
+	return true
 }
 
 func main() {
@@ -34,10 +46,7 @@ func main() {
 	if IsDoorClose(door) {
 		OpenDoor(door)
 	}
-	if IsDoorOpen(door) {
-		CloseDoor(door)
-	}
-	if door.state == OPEN {
+	if !IsDoorOpen(door) {
 		CloseDoor(door)
 	}
 }
