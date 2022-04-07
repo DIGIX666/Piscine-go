@@ -2,19 +2,16 @@ package main
 
 import "fmt"
 
-type pilot struct {
-	Name     string
-	Age      int
-	Life     int
-	Aircraft int
-}
-
 func main() {
-	donnie := pilot{}
-
+	var donnie struct {
+		Name     string
+		Life     int
+		Age      int
+		Aircraft int
+	}
 	donnie.Name = "Donnie"
-	donnie.Age = 24
 	donnie.Life = 100.0
+	donnie.Age = 24
 	donnie.Aircraft = 1
 
 	fmt.Println(donnie)
