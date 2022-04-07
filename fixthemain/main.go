@@ -3,8 +3,8 @@ package main
 import "github.com/01-edu/z01"
 
 func PrintStr(s string) {
-	for _, r := range s {
-		z01.PrintRune(r)
+	for _, v := range s {
+		z01.PrintRune(v)
 	}
 }
 
@@ -22,7 +22,7 @@ func CloseDoor(ptrDoor *Door) bool {
 }
 
 func IsDoorOpen(ptrDoor *Door) bool {
-	PrintStr("is the Door opened ? \n")
+	PrintStr("is the Door opened ?\n")
 	ptrDoor.state = false
 	return false
 }
