@@ -7,7 +7,7 @@ func Abort(a, b, c, d, e int) int {
 
 	for i := 0; i < count-1; i++ {
 		x = i
-		for j := 1; j < count; j++ {
+		for j := i + 1; j < count; j++ {
 			if moy[j] < moy[x] {
 				x = j
 			}
