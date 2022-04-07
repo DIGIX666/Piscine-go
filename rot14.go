@@ -1,26 +1,15 @@
 package piscine
 
 func Rot14(s string) string {
-	runes := []rune(s)
-	result := make([]rune, 0)
-
-	for _, l := range runes {
-		if l >= 'a' && l <= 'z' {
-			if l+14 > 'z' {
-				result = append(result, 'a'+l-'a'+14-26)
-			} else {
-				result = append(result, 'a'+l-'a'+14)
-			}
-		} else if l >= 'A' && l <= 'Z' {
-			if l+14 > 'Z' {
-				result = append(result, 'A'+l-'A'+14-26)
-			} else {
-				result = append(result, 'A'+l-'A'+14)
-			}
+	y := ""
+	for _, charactere := range s {
+		if charactere >= 'a' && charactere <= 'l' || charactere >= 'A' && charactere <= 'L' {
+			y += string(charactere + 14)
+		} else if charactere >= 'm' && charactere <= 'z' || charactere >= 'M' && charactere <= 'Z' {
+			y += string(charactere - 12)
 		} else {
-			result = append(result, l)
+			y += string(charactere)
 		}
 	}
-
-	return string(result)
+	return y
 }
