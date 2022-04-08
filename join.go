@@ -1,9 +1,19 @@
 package piscine
 
 func Join(strs []string, sep string) string {
-	resultat := ""
-	for _, v := range strs {
-		resultat += sep + v
+	x := ""
+	for i, val := range strs {
+		if i != len(strs)-1 {
+			x += val + sep
+		} else {
+			x += val
+		}
 	}
-	return resultat[1:]
+	return x
 }
+
+/*resultat := ""
+for _, v := range strs {
+	resultat += sep + v
+}
+return resultat[1:]*/
