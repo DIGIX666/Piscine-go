@@ -1,15 +1,5 @@
 package piscine
 
-type NodeL struct {
-	Data interface{}
-	Next *NodeL
-}
-
-type List struct {
-	Head *NodeL
-	Tail *NodeL
-}
-
 func ListPushFront(l *List, data interface{}) {
 	end := &NodeL{Data: data} //  on initialise un noeud et on met nos données à l'intérieur {....}
 	if l.Head == nil {        // l.head correspond au premier noeud
