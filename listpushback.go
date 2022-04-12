@@ -11,7 +11,7 @@ type List struct {
 }
 
 func ListPushBack(l *List, data interface{}) {
-	/*first := &NodeL{Data: data} //  on initialise un noeud et on met nos données à l'intérieur {....}
+	first := &NodeL{Data: data} //  on initialise un noeud et on met nos données à l'intérieur {....}
 	if l.Head == nil {          // l.head correspond au premier noeud
 		l.Head = first
 	} else {
@@ -21,13 +21,13 @@ func ListPushBack(l *List, data interface{}) {
 		}
 		x.Next = first
 	}
-	*/
-	n := &NodeL{Data: data}
+
+	/*n := &NodeL{Data: data}
 	if l.Head == nil {
 		l.Head = n
 		l.Tail = n
 	} else {
 		l.Tail.Next = n
 		l.Tail = n
-	}
+	}*/
 }
