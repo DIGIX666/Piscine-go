@@ -11,7 +11,7 @@ type List struct {
 }
 
 func ListPushBack(l *List, data interface{}) {
-	first := &NodeL{Data: data} //  on initialise un noeud et on met nos données à l'intérieur {....}
+	first := &NodeL{Data: data} //  on initialise un noeud et on met nos données à l'intérieur {....} | tableau de donnée
 	if l.Head == nil {          // l.head correspond au premier noeud
 		l.Head = first
 	} else {
